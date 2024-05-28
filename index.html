@@ -1,0 +1,173 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="LATIHAN">
+    <meta name="author" content="AldoWEB">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styling1.css">
+    <script src="js/index.js"></script>
+
+    <title>Cafe And Resto</title>
+</head>
+    <body class="font-sans bg-gray-100">
+        <nav class="flex items-center justify-between p-6 bg-gray-800">
+            <a href="#" class="flex items-center text-white">
+                <img src="logo.png" alt="Logo" class="h-8 mr-2">
+                <span class="text-xl font-bold">Cafe and Resto</span>
+            </a>
+            <ul class="flex space-x-4 text-white">
+                <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#About" class="hover:text-gray-300">About</a></li>
+                <li><a href="#produk" class="hover:text-gray-300">Produk</a></li>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                <li><a href="#career" class="hover:text-gray-300">Career</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Home Section -->
+        <section id="home" class="py-20 bg-white">
+            <div class="container mx-auto text-center">
+                <h1 class="mb-4 text-4xl font-bold text-gray-800">Selamat datang di Kafe Kami</h1>
+                <p class="text-lg text-gray-600">Nikmati hidangan lezat kami dan minuman segar yang menyegarkan, dirancang untuk memanjakan lidah Anda dengan berbagai cita rasa yang memikat. Dari hidangan utama yang menggugah selera hingga minuman penyegar yang meremajakan, setiap detail disusun dengan cermat untuk memberikan pengalaman kuliner yang tak terlupakan.</p>
+                <div class="mt-12 slider-container">
+                    <div class="slider-content">
+                        <img src="img/room/cafe1.jpg" alt="Cafe Image 1" class="rounded-lg shadow-lg">
+                        <img src="img/room/cafe2.jpg" alt="Cafe Image 2" class="rounded-lg shadow-lg">
+                        <img src="img/room/cafe3.jpg" alt="Cafe Image 3" class="rounded-lg shadow-lg">
+                        <img src="img/room/cafe4.jpg" alt="Cafe Image 4" class="rounded-lg shadow-lg">
+                        <img src="img/room/cafe5.jpg" alt="Cafe Image 5" class="rounded-lg shadow-lg">
+                        <!-- Repeat the images if needed -->
+                    </div>
+                    <button class="slider-button left" onclick="scrollSlider(-1)" aria-label="Scroll Left">&#9664;</button>
+                    <button class="slider-button right" onclick="scrollSlider(1)" aria-label="Scroll Right">&#9654;</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="About" class="py-20 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="mb-8 text-3xl font-bold text-gray-800">About Us</h2>
+                <p class="mb-6 text-lg text-gray-600">Di Kafe Kami, kami bersemangat untuk menyediakan suasana nyaman dan ramah di mana Anda dapat menikmati makanan dan minuman lezat. Tim kami berdedikasi untuk menggunakan bahan-bahan segar dan menawarkan berbagai hidangan untuk memuaskan semua selera.</p>
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full p-4 md:w-1/3">
+                        <img src="img/room/cafe2.jpg" alt="Cafe Interior" class="mb-4 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800">Ruang Interior</h3>
+                        <p class="text-gray-600">Bersantailah di area tempat duduk kami yang nyaman, cocok untuk pertemuan santai atau sesi kerja.</p>
+                    </div>
+                    <div class="w-full p-4 md:w-1/3">
+                        <img src="img/food/food1.jpg" alt="Delicious Food" class="mb-4 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800">Makanan</h3>
+                        <p class="text-gray-600">Nikmati beragam hidangan, mulai dari sarapan lezat hingga hidangan penutup yang lezat.</p>
+                    </div>
+                    <div class="w-full p-4 md:w-1/3">
+                        <img src="img/Drink/drink1.jpg" alt="Refreshing Beverages" class="mb-4 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800">Minuman</h3>
+                        <p class="text-gray-600">Puaskan dahaga Anda dengan pilihan kopi, teh, dan minuman menyegarkan lainnya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section id="produk" class="py-20 bg-white">
+            <div class="container mx-auto">
+                <div class="text-center">
+                    <h2 class="mb-4 text-4xl font-bold text-gray-800">Menu makanan</h2>
+                    <p class="text-lg text-gray-600">Inilah pilihan menu Makanan lezat kami</p>
+                </div>
+                <div class="grid grid-cols-1 gap-12 mt-12 md:grid-cols-2 lg:grid-cols-3">
+                    <img src="img/food/food1.jpg" alt="Food Image 1" class="rounded-lg shadow-lg">
+                    <img src="img/food/food2.jpg" alt="Food Image 2" class="rounded-lg shadow-lg">
+                    <img src="img/food/food4.jpg" alt="Food Image 3" class="rounded-lg shadow-lg">
+                    <img src="img/food/food3.jpg" alt="Food Image 4" class="rounded-lg shadow-lg">
+                    <img src="img/food/food6.jpg" alt="Food Image 5" class="rounded-lg shadow-lg">
+                    <img src="img/food/food5.jpg" alt="Food Image 6" class="rounded-lg shadow-lg">
+                </div>
+                <div class="mt-12 text-center">
+                    <h2 class="mb-4 text-4xl font-bold text-gray-800">Menu Minuman</h2>
+                    <p class="text-lg text-gray-600">Inilah pilihan menu Minumnan lezat kami</p>
+                </div>
+                <div class="grid grid-cols-1 gap-12 mt-12 md:grid-cols-2 lg:grid-cols-3">
+                    <img src="img/Drink/drink1.jpg" alt="Drink Image 1" class="rounded-lg shadow-lg">
+                    <img src="img/Drink/drink2.jpg" alt="Drink Image 2" class="rounded-lg shadow-lg">
+                    <img src="img/Drink/drink3.jpg" alt="Drink Image 3" class="rounded-lg shadow-lg">
+                    <img src="img/Drink/drink4.jpg" alt="Drink Image 4" class="rounded-lg shadow-lg">
+                    <img src="img/Drink/drink5.jpg" alt="Drink Image 5" class="rounded-lg shadow-lg">
+                    <img src="img/Drink/drink2.jpg" alt="Drink Image 6" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-12">
+            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                <div class="flex flex-col items-center mb-8">
+                    <h2 class="mb-2 text-3xl font-bold">Kontak Saya</h2>
+                    <p class="text-gray-600">Ingin berkolaborasi atau memiliki pertanyaan? Hubungi saya melalui form di bawah ini:</p>
+                </div>
+                <div class="flex flex-col sm:flex-row sm:space-x-4">
+                    <div class="sm:w-1/2">
+                        <div id="map" class="w-full border border-gray-300"></div>
+                    </div>
+                    <div class="mt-6 sm:w-1/2 sm:mt-0">
+                        <form class="w-full max-w-lg" method="POST" action="backend.php">
+                            <div class="mb-4">
+                                <label class="block text-gray-700" for="name">Nama</label>
+                                <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:shadow-outline" type="text" id="name" name="name" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700" for="email">Email</label>
+                                <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:shadow-outline" type="email" id="email" name="email" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700" for="message">Pesan</label>
+                                <textarea class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:shadow-outline" id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button class="px-4 py-2 text-white transition-colors bg-blue-500 rounded-md hover:bg-blue-600" type="submit">Kirim</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- KeyApiMaps -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC56v9F10HzQZzeYXP1ANS4oXvWYeJLgAQ&callback=initMap"></script>
+        
+        <!-- Career Section -->
+        <section id="career" class="py-20 bg-white">
+            <div class="container mx-auto">
+                <div class="text-center">
+                    <h2 class="mb-4 text-4xl font-bold text-gray-800">Career Opportunities</h2>
+                    <p class="text-lg text-gray-600">Bergabunglah dengan tim kami dan tumbuh bersama kami!</p>
+                </div>
+                <div class="grid grid-cols-1 gap-12 mt-12 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+                        <h3 class="mb-4 text-2xl font-bold text-gray-800">Koki</h3>
+                        <h5>Bergabunglah dengan Tim Kami sebagai Koki di Cafe and Resto!</h5>
+                        <p class="mb-4 text-lg text-gray-600">Cafe and Resto sedang mencari Koki berbakat dan berdedikasi untuk bergabung dengan tim kuliner kami yang dinamis. Menyiapkan, memasak, dan menyajikan berbagai hidangan sesuai dengan standar kualitas Cafe and Resto. Mengembangkan menu kreatif dengan memperhatikan keanekaragaman bahan dan presentasi.Memastikan kebersihan dan keamanan dapur sesuai dengan standar kesehatan dan keselamatan.Mengelola stok bahan makanan dan membuat pesanan sesuai kebutuhan.</p>
+                        <a href="#" class="inline-block px-6 py-3 text-white bg-green-500 rounded-lg hover:bg-green-600">KIRIM</a>
+                    </div>
+                    <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+                        <h3 class="mb-4 text-2xl font-bold text-gray-800">Pelayan</h3>
+                        <h5>Bergabunglah dengan Tim Kami sebagai PELAYAN di Cafe and Resto!</h5>
+                        <p class="mb-4 text-lg text-gray-600">Cafe and Resto sedang mencari Pelayan yang ramah dan berdedikasi untuk bergabung dengan tim kami. Menyambut dan menyapa tamu dengan ramah serta mengantar mereka ke meja. Menyajikan menu dan memberikan penjelasan mengenai hidangan serta minuman yang ditawarkan. Mengambil pesanan makanan dan minuman dengan akurat dan mengirimkan pesanan tersebut ke dapur. Menyajikan makanan dan minuman dengan sopan serta memastikan kepuasan tamu.</p>
+                        <a href="#" class="inline-block px-6 py-3 text-white bg-green-500 rounded-lg hover:bg-green-600">KIRIM</a>
+                    </div>
+                    <div class="p-6 bg-gray-100 rounded-lg shadow-lg">
+                        <h3 class="mb-4 text-2xl font-bold text-gray-800">Administrasi</h3>
+                        <h5>Bergabunglah dengan Tim Kami sebagai Staff Admin di Cafe and Resto!</h5>
+                        <p class="mb-4 text-lg text-gray-600">Cafe and Resto sedang mencari Staf Administrasi yang terampil dan berdedikasi untuk bergabung dengan tim kami. Mengelola dan mengorganisir dokumen, catatan, dan file perusahaan. Menangani panggilan telepon, email, dan korespondensi lainnya dengan profesional. Mengelola jadwal pertemuan dan mengatur agenda rapat. Menyusun laporan mingguan, bulanan, dan tahunan serta presentasi terkait. Berkoordinasi dengan departemen lain untuk memastikan aliran informasi yang lancar.</p>
+                        <a href="#" class="inline-block px-6 py-3 text-white bg-green-500 rounded-lg hover:bg-green-600">KIRIM</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer Section -->
+        <footer class="py-8 text-center text-white bg-gray-800">
+            <p>&copy; 2024 AldoWEB. All rights reserved.</p>
+        </footer>
+
+    </body>
+</html>

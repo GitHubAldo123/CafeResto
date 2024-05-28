@@ -1,0 +1,43 @@
+        /* scroll netflix untuk image room */
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .slider-content {
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .slider-content img {
+            display: inline-block;
+            width: 300px; /* Adjust the width as needed */
+            margin-right: 20px;
+        }
+
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .slider-button.left {
+            left: 10px;
+        }
+
+        .slider-button.right {
+            right: 10px;
+        }
+
+        /* controlMaps */
+        #map {
+            width: 100%;
+            height: 400px; /* Ensure the map has a height */
+            border: 1px solid gray;
+        }
