@@ -1,3 +1,8 @@
+function toggleMenu() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('show');
+}
+
 let currentScrollPosition = 0;
     const scrollAmount = 300; // Adjust this value to control the scroll amount
     const slider = document.querySelector('.slider-content');

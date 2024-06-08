@@ -16,12 +16,15 @@
                 <img src="logo.png" alt="Logo" class="h-8 mr-2">
                 <span class="text-xl font-bold">Cafe and Resto</span>
             </a>
-            <ul class="flex space-x-4 text-white">
-                <li><a href="#home" class="hover:text-gray-300">Home</a></li>
-                <li><a href="#About" class="hover:text-gray-300">About</a></li>
-                <li><a href="#produk" class="hover:text-gray-300">Produk</a></li>
-                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
-                <li><a href="#career" class="hover:text-gray-300">Career</a></li>
+            <div class="menu-icon md:hidden" onclick="toggleMenu()">
+                &#9776;
+            </div>
+            <ul id="nav-menu" class="hidden space-x-4 text-white md:flex">
+                <li><a href="#home" class="block px-4 py-2 rounded hover:bg-gray-700">Home</a></li>
+                <li><a href="#About" class="block px-4 py-2 rounded hover:bg-gray-700">About</a></li>
+                <li><a href="#produk" class="block px-4 py-2 rounded hover:bg-gray-700">Produk</a></li>
+                <li><a href="#contact" class="block px-4 py-2 rounded hover:bg-gray-700">Contact</a></li>
+                <li><a href="#career" class="block px-4 py-2 rounded hover:bg-gray-700">Career</a></li>
             </ul>
         </nav>
         

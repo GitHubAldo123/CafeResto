@@ -1,43 +1,94 @@
-        /* scroll netflix untuk image room */
-        .slider-container {
-            position: relative;
-            overflow: hidden;
-            white-space: nowrap;
-        }
+/* Tailwind CSS is assumed to be imported in your project */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css');
 
-        .slider-content {
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
+.menu-icon {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
 
-        .slider-content img {
-            display: inline-block;
-            width: 300px; /* Adjust the width as needed */
-            margin-right: 20px;
-        }
+/* Hide the nav menu on smaller screens by default */
+#nav-menu.hidden {
+    display: none;
+}
 
-        .slider-button {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
+/* Show the nav menu on smaller screens when toggled */
+#nav-menu.show {
+    display: block;
+}
 
-        .slider-button.left {
-            left: 10px;
-        }
+/* Styles for the mobile menu */
+#nav-menu.show {
+    position: absolute;
+    top: 64px; /* Height of the navbar */
+    left: 0;
+    width: 100%;
+    background-color: #2d3748; /* Tailwind's bg-gray-800 */
+    z-index: 10;
+}
 
-        .slider-button.right {
-            right: 10px;
-        }
+#nav-menu.show li {
+    border-bottom: 1px solid #4a5568; /* Tailwind's bg-gray-700 */
+}
 
-        /* controlMaps */
-        #map {
-            width: 100%;
-            height: 400px; /* Ensure the map has a height */
-            border: 1px solid gray;
-        }
+#nav-menu.show li:last-child {
+    border-bottom: none;
+}
+
+/* Always show the menu on medium and larger screens */
+@media (min-width: 768px) {
+    #nav-menu {
+        display: flex !important;
+        position: static;
+        width: auto;
+        background-color: transparent;
+    }
+    #nav-menu li {
+        border-bottom: none;
+    }
+}
+
+
+
+/* scroll netflix untuk image room */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slider-content {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.slider-content img {
+    display: inline-block;
+    width: 300px; /* Adjust the width as needed */
+    margin-right: 20px;
+}
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer
+}
+
+.slider-button.left {
+    left: 10px;
+}
+
+.slider-button.right {
+    right: 10px;
+}
+
+/* controlMaps */
+#map {
+    width: 100%;
+    height: 400px; /* Ensure the map has a height */
+    border: 1px solid gray;
+}
