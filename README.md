@@ -1,2 +1,2 @@
-﻿# web-cafeandresto
-link https://githubaldo123.github.io/web-cafeandresto/
+﻿# CafeResto
+link https://githubaldo123.github.io/CafeResto/
